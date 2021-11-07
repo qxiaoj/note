@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+
+		<bean id="dog222" class="com.qj.entity.Dog"></bean>
+	<bean id="dog111" class="com.qj.entity.Dog"></bean>
+    <bean id="cat111" class="com.qj.entity.Cat" ></bean>
+    
+    <bean id="people" class="com.qj.entity.People">
+    	<property name="name" value="张胜男"></property>
+    </bean>
+</beans>

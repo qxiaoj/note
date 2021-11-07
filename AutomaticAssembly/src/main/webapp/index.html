@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>查询所有数据</title>
+  <script src="./lib/vue.js"></script>
+  <script src="./lib/vue-resource.js"></script>
+  <link rel="stylesheet" href="./lib/bootstrap-3.3.7.css">
+</head>
+
+<body>
+  <div id="app">
+
+    <table class="table table-hover table-bordered table-condensed table-striped">
+      <thead>
+        <tr>
+          <th>account</th>
+          <th>username</th>
+          <th>password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="item in items" :key="item.account">
+          <td v-html="item.account">{{item.account}}</td>
+          <td v-html="item.username">2</td>
+          <td v-html="item.password">3</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+    <button @click="findAll">点击</button>
+  </div>
+  
+</body>
+
+
+
+<script>
+	
+	
+	
+  var app = new Vue({
+    el: '#app',
+    data: {
+		items: null,
+		name:"userinfo"
+    },
+    methods: {
+    	findAll:function(){
+    		this.$http.get('findAll').then(
+    	            function (result) {
+    	              	this.items = result.data.userinfo;
+    	            }
+    	     );
+    	}
+    }
+  })
+</script>
+
+</html>

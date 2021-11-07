@@ -1,0 +1,10 @@
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-11-05][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-11-05][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-11-05][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-11-05][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-11-05][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 200404000.
+[DEBUG][21-11-05][com.qj.dao.UserInfoDao.findAll]==>  Preparing: select * from userinfo 
+[DEBUG][21-11-05][com.qj.dao.UserInfoDao.findAll]==> Parameters: 
+[DEBUG][21-11-05][com.qj.dao.UserInfoDao.findAll]<==      Total: 5
